@@ -30,7 +30,7 @@ twitter_username: verydopetweets
 github_username:  hongtron
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 

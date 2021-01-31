@@ -35,7 +35,7 @@
   * `$ git rebase -i HEAD~(number of commits to rebase)`
     * `f` - combine with previous commit and discard message (good for `wip` commits)
     * `e` - good for breaking up a commit into smaller commits
-      * `git reset`
+      * `git reset HEAD~1`
       * create commits as necessary
 
 ## tmux

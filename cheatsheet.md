@@ -1,4 +1,4 @@
-# Cheatsheet
+Things I use (or want to use more often).
 
 ## bash
 
@@ -47,4 +47,13 @@
   <space> # begin selection; can use vim motions
   <enter> # copy selection
   C-a ] # paste
+  ```
+
+## vim
+
+* substitution with backreference
+
+  ```
+  :%s/\(SOME_PATTERN\)/\0/g # \0 is text matched by entire pattern
+  :%s/\(FIRST_PATTERN\)\(SECOND_PATTERN\)/\1\2/g # \1 is first backref, \2 is second backref
   ```

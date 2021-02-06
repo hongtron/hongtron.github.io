@@ -26,7 +26,7 @@ Things I use (or want to use more often).
 * handy aliases
 
   ```bash
-  alias gwip="git add . && git commit -am wip"
+  alias gwip="git add . && git commit -m wip"
   alias gcan!="git commit --amend --no-edit"
   ```
 

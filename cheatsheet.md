@@ -57,3 +57,7 @@ Things I use (or want to use more often).
   :%s/\(SOME_PATTERN\)/\0/g # \0 is text matched by entire pattern
   :%s/\(FIRST_PATTERN\)\(SECOND_PATTERN\)/\1\2/g # \1 is first backref, \2 is second backref
   ```
+
+* newlines
+  * searching: `\n` is newline, `\r` is CR
+  * replacing: `\r` is newline, `\n` is a null byte (0x00)

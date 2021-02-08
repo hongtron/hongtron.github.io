@@ -21,6 +21,37 @@ Things I use (or want to use more often).
   !!      whole line
   ```
 
+* template: simple script with args
+
+  ```bash
+  #!/bin/bash
+
+  set -eu -o pipefail
+
+  usage() {
+    cat <<EOF
+  $(basename "$0") [-f <value>]
+  Options
+    -f, --foo     First option
+  EOF
+  }
+
+  while [[ $# > 0 && $1 == -* ]]; do
+    case $1 in
+      -f|--foo)
+        shift
+        export FOO=$1
+        ;;
+      -h|--help)
+        usage
+        exit
+        ;;
+    esac
+
+    shift
+  done
+  ```
+
 ## git
 
 * handy aliases
